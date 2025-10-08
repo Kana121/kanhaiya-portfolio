@@ -59,7 +59,7 @@ A modern, responsive portfolio website built with **React.js**, **Vite**, and **
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/kanhaiya-portfolio.git
+git clone https://github.com/Kana121/kanhaiya-portfolio.git
 cd kanhaiya-portfolio
 
 # Install dependencies

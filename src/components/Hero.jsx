@@ -189,9 +189,9 @@ const Hero = () => {
             className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto"
           >
             {[
-              { number: "3.1+", label: "Years Experience", emoji: "💼" },
+              { number: "5+", label: "Years Experience", emoji: "💼" },
               { number: "10+", label: "Projects Delivered", emoji: "⭐" },
-              { number: "2", label: "Expert Domains", emoji: "🎯" },
+              { number: "4", label: "Expert Domains", emoji: "🎯" },
               { number: "100%", label: "Client Satisfaction", emoji: "❤️" }
             ].map((stat, index) => (
               <motion.div

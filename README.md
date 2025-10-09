@@ -1,16 +1,69 @@
-# React + Vite
+# Kanhaiya R. Dharu - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with **React.js**, **Vite**, and **Tailwind CSS**, featuring stunning animations and smooth interactions.
 
-Currently, two official plugins are available:
+![Portfolio Live](https://img.shields.io/badge/Portfolio-Live-brightgreen)
+![React](https://img.shields.io/badge/React-18.2.0-blue)
+![Vite](https://img.shields.io/badge/Vite-5.0.0-purple)
+![Tailwind](https://img.shields.io/badge/Tailwind-3.3.0-cyan)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
+[View Live Portfolio](https://your-live-portfolio-url.com)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- 🎨 **Modern Design** – Clean, professional layout with glassmorphism effects  
+- ⚡ **Fast Performance** – Built with Vite for lightning-fast development and builds  
+- 📱 **Fully Responsive** – Optimized for mobile, tablet, and desktop  
+- 🎭 **Smooth Animations** – Framer Motion powered animations and transitions  
+- 🎯 **Interactive Elements** – Hover effects, scroll animations, and micro-interactions  
+- 🌈 **Gradient Themes** – Beautiful color schemes with smooth gradients  
+- 📧 **Contact Form** – Functional contact form with email integration  
+- ⚙️ **SEO Optimized** – Proper meta tags and structured data  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+- **Frontend Framework:** React 18  
+- **Build Tool:** Vite  
+- **Styling:** Tailwind CSS  
+- **Animations:** Framer Motion  
+- **Icons:** React Icons + Emojis  
+- **Typewriter Effect:** React Type Animation  
+- **Deployment:** Netlify / Vercel  
+
+---
+
+## 📦 Sections
+- **Header:** Navigation with smooth scroll and mobile menu  
+- **Hero:** Introduction with typewriter effect and call-to-action  
+- **Services:** Freelance services with interactive cards  
+- **Skills:** Technical skills with animated progress indicators  
+- **Experience:** Professional experience with project details  
+- **Education:** Academic background with achievements  
+- **Awards:** Recognition and accomplishments  
+- **Contact:** Contact form and information  
+- **Footer:** Social links and additional information  
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js (v14 or higher)  
+- npm or yarn  
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Kana121/kanhaiya-portfolio.git
+cd kanhaiya-portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev

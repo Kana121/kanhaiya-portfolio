@@ -111,7 +111,7 @@ const Header = () => {
               className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
               whileHover={{ scale: 1.05 }}
             >
-              Kanhaiya R. Dharu
+              KRD
             </motion.h1>
             <motion.p 
               className="text-xs sm:text-sm text-gray-600 hidden xs:block"

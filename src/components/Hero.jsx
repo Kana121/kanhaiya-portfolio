@@ -132,8 +132,8 @@ const Hero = () => {
             className="text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed mb-8 text-blue-100 font-light"
           >
             Crafting <span className="font-semibold text-white">scalable solutions</span> with{' '}
-            <span className="font-semibold text-white">3.1+ years</span> of excellence in{' '}
-            <span className="font-semibold text-white">banking & healthcare</span> domains
+             of excellence in{' '}
+            <span className="font-semibold text-white">banking , healthcare & ecommerce</span> domains
           </motion.p>
 
           {/* CTA Buttons */}

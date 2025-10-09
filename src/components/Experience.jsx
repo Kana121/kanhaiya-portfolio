@@ -13,7 +13,7 @@ const Experience = () => {
       duration: "JUNE 2022 - JULY 2025, Hyderabad",
       icon: "💼",
       color: "from-blue-500 to-cyan-500",
-      description: "Results-driven Java Full Stack Developer with over 3.1 years of experience designing, developing, and deploying scalable, high-performance applications in banking and healthcare domains. Proficient in backend technologies including Java, Spring Boot, Microservices, and Kafka, with strong skills in frontend frameworks like React.js. Experienced in AWS cloud services, CI/CD pipelines, Docker. Adept at solving complex problems using clean architecture and agile methodologies. Strong collaborator with experience mentoring interns and driving quality in cross-functional teams.",
+      description: "Results-driven Java Full Stack Developer with experience designing, developing, and deploying scalable, high-performance applications in banking, healthcare, and e-commerce domains. Proficient in backend technologies including Java, Spring Boot, Microservices, and Kafka, with strong skills in frontend frameworks like React.js. Experienced in AWS cloud services, CI/CD pipelines, Docker. Adept at solving complex problems using clean architecture and agile methodologies. Strong collaborator with experience mentoring interns and driving quality in cross-functional teams.",
       projects: [
         {
           name: "Merchant Acquisition – Agency Banking (Banking Domain)",
@@ -41,6 +41,23 @@ const Experience = () => {
             "Adopted a microservices architecture to modularize core services like appointments, user management, payments, and analytics.",
             "Optimized database interactions MySQL, enhancing system reliability and reducing query latency.",
             "Collaborated with healthcare professionals to tailor features to clinical workflows and compliance needs."
+          ]
+        },
+        {
+          name: "ShopNest E-commerce Platform (E-commerce Domain)",
+          icon: "🛒",
+          color: "from-orange-500 to-red-500",
+          points: [
+            "Developed a full-stack e-commerce platform with React.js frontend and Spring Boot microservices backend.",
+            "Implemented product catalog management with advanced search, filtering, and categorization features.",
+            "Built secure payment gateway integration supporting multiple payment methods (Razorpay, Stripe, PayPal).",
+            "Designed and implemented shopping cart functionality with real-time inventory management.",
+            "Developed user authentication and authorization system with JWT tokens and role-based access control.",
+            "Created admin dashboard for order management, product CRUD operations, and sales analytics.",
+            "Optimized application performance with Redis caching, CDN integration, and database query optimization.",
+            "Implemented responsive design ensuring seamless shopping experience across all devices.",
+            "Integrated real-time notifications for order updates, promotions, and inventory alerts.",
+            "Deployed using Docker containers on AWS with auto-scaling and load balancing capabilities."
           ]
         }
       ]
@@ -107,6 +124,18 @@ const Experience = () => {
     }
   };
 
+  // E-commerce specific technologies
+  const ecommerceTech = [
+    { name: "React.js", icon: "⚛️" },
+    { name: "Spring Boot", icon: "🌱" },
+    { name: "PostgreSQL", icon: "🐘" },
+    { name: "Redis", icon: "🗃️" },
+    { name: "Docker", icon: "🐳" },
+    { name: "AWS", icon: "☁️" },
+    { name: "Razorpay", icon: "💳" },
+    { name: "JWT", icon: "🔐" }
+  ];
+
   return (
     <section id="experience" className="relative section-padding bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 overflow-hidden">
       {/* Animated Background Elements */}
@@ -134,6 +163,18 @@ const Experience = () => {
           }}
           className="absolute bottom-20 right-10 w-40 h-40 bg-purple-200 rounded-full blur-3xl"
         />
+        <motion.div
+          animate={{
+            scale: [1, 1.1, 1],
+            opacity: [0.1, 0.2, 0.1],
+          }}
+          transition={{
+            duration: 5,
+            repeat: Infinity,
+            delay: 1
+          }}
+          className="absolute top-1/2 left-1/4 w-24 h-24 bg-orange-200 rounded-full blur-3xl"
+        />
       </div>
 
       <div className="container mx-auto relative z-10">
@@ -147,7 +188,7 @@ const Experience = () => {
             Professional Journey
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Building scalable solutions and driving innovation across diverse domains
+            Building scalable solutions and driving innovation across banking, healthcare, and e-commerce domains
           </p>
         </motion.div>
 
@@ -215,6 +256,27 @@ const Experience = () => {
                     {exp.description}
                   </motion.p>
 
+                  {/* Domain Expertise Badges */}
+                  <motion.div
+                    variants={itemVariants}
+                    className="flex flex-wrap gap-3 mb-8 justify-center"
+                  >
+                    {[
+                      { domain: "Banking", icon: "🏦", color: "bg-green-100 text-green-800" },
+                      { domain: "Healthcare", icon: "🏥", color: "bg-purple-100 text-purple-800" },
+                      { domain: "E-commerce", icon: "🛒", color: "bg-orange-100 text-orange-800" }
+                    ].map((badge, idx) => (
+                      <motion.div
+                        key={idx}
+                        whileHover={{ scale: 1.05, y: -2 }}
+                        className={`flex items-center gap-2 px-4 py-2 rounded-full font-semibold ${badge.color} shadow-sm`}
+                      >
+                        <span>{badge.icon}</span>
+                        <span>{badge.domain}</span>
+                      </motion.div>
+                    ))}
+                  </motion.div>
+
                   {/* Projects */}
                   <motion.div
                     variants={containerVariants}
@@ -238,9 +300,30 @@ const Experience = () => {
                           >
                             {project.icon}
                           </motion.div>
-                          <h4 className="text-xl sm:text-2xl font-bold text-gray-800 flex-1">
-                            {project.name}
-                          </h4>
+                          <div className="flex-1">
+                            <h4 className="text-xl sm:text-2xl font-bold text-gray-800">
+                              {project.name}
+                            </h4>
+                            {project.name.includes("E-commerce") && (
+                              <motion.div
+                                initial={{ opacity: 0, scale: 0.8 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ delay: 0.5 }}
+                                className="flex flex-wrap gap-2 mt-3"
+                              >
+                                {ecommerceTech.map((tech, techIndex) => (
+                                  <motion.span
+                                    key={techIndex}
+                                    whileHover={{ scale: 1.1 }}
+                                    className="flex items-center gap-1 bg-blue-50 text-blue-700 px-2 py-1 rounded-lg text-xs font-medium"
+                                  >
+                                    <span>{tech.icon}</span>
+                                    <span>{tech.name}</span>
+                                  </motion.span>
+                                ))}
+                              </motion.div>
+                            )}
+                          </div>
                         </motion.div>
 
                         {/* Project Points */}
@@ -283,6 +366,23 @@ const Experience = () => {
                           ))}
                         </motion.ul>
 
+                        {/* E-commerce Demo Link */}
+                        {project.name.includes("E-commerce") && (
+                          <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.8 }}
+                            className="mt-6 pt-6 border-t border-gray-200"
+                          >
+                            <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
+                              <p className="text-gray-600 text-sm">
+                                🚀 Full-stack e-commerce solution with modern tech stack
+                              </p>
+                            
+                            </div>
+                          </motion.div>
+                        )}
+
                         {/* Project Gradient Border */}
                         <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${project.color} opacity-0 group-hover/project:opacity-5 transition-opacity duration-500 -z-10`} />
                       </motion.div>
@@ -302,6 +402,12 @@ const Experience = () => {
                   transition={{ delay: 1 }}
                   className="absolute -bottom-3 -left-3 w-4 h-4 bg-purple-400 rounded-full shadow-lg"
                 />
+                <motion.div
+                  variants={floatingVariants}
+                  animate="animate"
+                  transition={{ delay: 0.5 }}
+                  className="absolute -top-3 -left-3 w-5 h-5 bg-orange-400 rounded-full shadow-lg"
+                />
               </motion.div>
             </motion.div>
           ))}
@@ -315,7 +421,7 @@ const Experience = () => {
           className="text-center mt-12"
         >
           <p className="text-gray-600 text-lg mb-6">
-            Interested in leveraging this experience for your project?
+            Interested in building your next e-commerce platform or enterprise application?
           </p>
           <motion.a
             href="#contact"

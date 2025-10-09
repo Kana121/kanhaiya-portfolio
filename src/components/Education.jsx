@@ -217,7 +217,7 @@ const Education = () => {
                   className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-2xl font-bold text-lg shadow-lg"
                 >
                   <span>⚡</span>
-                  <span>Electrical Engineering</span>
+                  <span>Software Engineering</span>
                   <span>⚡</span>
                 </motion.div>
 
@@ -265,7 +265,7 @@ const Education = () => {
                   className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8"
                 >
                   {[
-                    { icon: "🔌", title: "Electrical Systems", desc: "Power & Control" },
+                    { icon: "🔌", title: "Clinet Server Systems", desc: "Power & Control" },
                     { icon: "💡", title: "Innovation", desc: "Creative Solutions" },
                     { icon: "📊", title: "Analysis", desc: "Technical Planning" }
                   ].map((item, index) => (
@@ -329,7 +329,7 @@ const Education = () => {
           >
             <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-6 border border-blue-200/30">
               <p className="text-gray-700 text-center text-lg">
-                <span className="font-semibold text-blue-600">Electrical Engineering background</span> 
+                <span className="font-semibold text-blue-600"> Engineering background</span> 
                 {" "}provides a strong analytical foundation that enhances problem-solving skills in software development
               </p>
             </div>

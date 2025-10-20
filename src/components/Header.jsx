@@ -107,12 +107,12 @@ const Header = () => {
             className="flex-shrink-0"
             whileHover={{ scale: 1.02 }}
           >
-            <motion.h1 
-              className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+            <motion.h 
+              className=" text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
               whileHover={{ scale: 1.05 }}
             >
-              KRD
-            </motion.h1>
+              <img src="/logo.png" width={50} alt="KRD SOLUTION" />
+            </motion.h>
             <motion.p 
               className="text-xs sm:text-sm text-gray-600 hidden xs:block"
               initial={{ opacity: 0 }}
